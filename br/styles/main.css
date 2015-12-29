@@ -1,8 +1,10 @@
-.serchCrit { padding:3px; font-size:22px; border-style:solid; border-radius:6px; border-width:5px; border-color:#ed1515; text-align:center; box-shadow:inset 0px 0px 5px 0px rgba(42,42,42,.78); font-family:sans-serif;  } 
+
+
+.serchCrit { width: 150px; padding:3px; font-size:22px; border-style:solid; border-radius:6px; border-width:5px; border-color:#ed1515; text-align:center; box-shadow:inset 0px 0px 5px 0px rgba(42,42,42,.78); font-family:sans-serif;  } 
 		 .css-input:focus { outline:none; } 
          
          
-.dominPrefix { margin-right: 15px; width: 90px; padding:3px; font-size:22px; border-style:solid; border-radius:6px; border-width:5px; border-color:#ed1515; text-align:center; box-shadow:inset 0px 0px 5px 0px rgba(42,42,42,.78); font-family:sans-serif;  } 
+.dominPrefix { margin-right: 15px; width: 70px; padding:3px; font-size:22px; border-style:solid; border-radius:6px; border-width:5px; border-color:#ed1515; text-align:center; box-shadow:inset 0px 0px 5px 0px rgba(42,42,42,.78); font-family:sans-serif;  } 
 		 .css-input:focus { outline:none; } 
          
 button {

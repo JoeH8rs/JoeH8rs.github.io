@@ -1,0 +1,41 @@
+.serchCrit { padding:3px; font-size:22px; border-style:solid; border-radius:6px; border-width:5px; border-color:#ed1515; text-align:center; box-shadow:inset 0px 0px 5px 0px rgba(42,42,42,.78); font-family:sans-serif;  } 
+		 .css-input:focus { outline:none; } 
+         
+         
+.dominPrefix { margin-right: 15px; width: 90px; padding:3px; font-size:22px; border-style:solid; border-radius:6px; border-width:5px; border-color:#ed1515; text-align:center; box-shadow:inset 0px 0px 5px 0px rgba(42,42,42,.78); font-family:sans-serif;  } 
+		 .css-input:focus { outline:none; } 
+         
+button {
+  margin: 0 6px 0 2px;
+  background: #ed1515;
+  background-image: -webkit-linear-gradient(top, #ed1515, #dd1519);
+  background-image: -moz-linear-gradient(top, #ed1515, #dd1519);
+  background-image: -ms-linear-gradient(top, #ed1515, #dd1519);
+  background-image: -o-linear-gradient(top, #ed1515, #dd1519);
+  background-image: linear-gradient(to bottom, #ed1515, #dd1519);
+  -webkit-border-radius: 13;
+  -moz-border-radius: 13;
+  border-radius: 6px;
+  font-family: Arial;
+  color: #000;
+  font-size: 21px;
+  padding: 0 14px 0 14px;
+  text-decoration: none;
+}
+
+.add:hover {
+  background: #cd1515;
+  background-image: -webkit-linear-gradient(top, #cd1515, #ed1515);
+  background-image: -moz-linear-gradient(top, #cd1515, #ed1515);
+  background-image: -ms-linear-gradient(top, #cd1515, #ed1515);
+  background-image: -o-linear-gradient(top, #cd1515, #ed1515);
+  background-image: linear-gradient(to bottom, #cd1515, #ed1515);
+  text-decoration: none;
+}
+
+.logo {
+   position: absolute;
+   top: 15px;
+    left: 0;
+ 
+}

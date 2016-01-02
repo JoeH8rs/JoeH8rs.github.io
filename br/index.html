@@ -1,121 +1,75 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>jQuery WebGL Ripples</title>
-<style>
-* { margin: 0; padding: 0; }
-html {
-	height: 100%;
-}
-body {
-	color: #fff;
-	font-size: 16px;
-	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-	background-image: url(img/bg2.jpg);
-	background-size: cover;
-	height: 100%;
-	text-align: center;
-    
-}
+    <title>Black Ripple</title>
 
-body:before {
-	content: '';
-	display: inline-block;
-	vertical-align: middle;
-	height: 100%;
-}
+    <link rel="stylesheet" href="styles/main.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
 
-main {
-	display: inline-block;
-	vertical-align: middle;
-	background: url(img/bg.jpg);
-	padding:  100px;
-	max-width: 500px;
-	text-shadow: 0 1px 2px rgba(0,0,0,0.5);
-	box-shadow: 0 5px 15px rgba(0,0,0,0.5);
-}
+    <body>
 
-h1 {
-	font-size: 32px;
-}
-h2 {
-	font-size: 18px;
-	margin-top: 6px;
-}
-p {
-	text-align: left;
-	margin-top: 20px;
-}
-a {
-	color: #ff6800;
-}
-pre {
-	text-align: left;
-	margin-top: 20px;
-}
-
-.error {
-	display: none;
-	position: fixed;
-	bottom: 0;
-	left: 0;
-	background: #000;
-	color: #f00;
-	padding: 5px;
-	max-width: 50%;
-}
-
-button {
-	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-	padding: 0 0.8em;
-	line-height: 2em;
-	border: none;
-	background: #666;
-	color: #fff;
-	text-shadow: 0 -1px 0 rgba(0,0,0,0.5);
-	border-radius: 4px;
-	cursor: pointer;
-	margin-bottom: 0.5em;
-	box-shadow: 0 2px 3px rgba(0,0,0,0.5);
-}
-
-button:hover {
-	background: #888;
-}
-
-code { font-size: 0.8em; display: inline; }
-
-.disable {
-	position: fixed;
-	bottom: 0;
-	right: 0;
-}
-
-.code-string { color:#ec7600 }
-.code-cbracket { font-weight:bold }
-.code-number { color:#ffcd22 }
-
-</style>
-<link rel="stylesheet" href="styles/main.css">
-</head>
-
-<body>
-    
-   <img class="logo" src='img/br.png'>
-<input class="serchCrit" value="Color: First"></input>
-<input class="serchCrit" value="Living: Last"></input>
-<button class="add">+</button>
-<input class="dominPrefix" value=".com"></input>
-<button class="add">Search</button>
+        <div class="backfade">
+        </div>
+        <img class="menu" src='img/menu.svg'></a>
 
 
 
 
-<div class="error"></div>
+        <div class="searchArea">
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
-<script src="js/jquery.ripples.js"></script>
-<script src="js/cut.js"></script>
+            <!--<img class="logo" src='img/br.png'>-->
+            <input class="serchCrit" value="Popular Colors"></input>
+            <input class="serchCrit" value="Living Things"></input>
+            <button class="add">+</button>
+            <input class="dominPrefix" value=".com"></input>
+            <button class="search">Search</button>
+            <br>
+            <div class="someText" style="display: none;">
 
-</body>
+                <table class="tg">
+                    <tr>
+                        <td class="tg-031e">RedMonkey.com</td>
+                        <td class="tg-031e">Available</td>
+                        <td class="tg-031e">
+                            <button class="buy">Buy</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tg-031e">PinkPanda.com</td>
+                        <td class="tg-031e">Available</td>
+                        <td class="tg-031e">
+                            <button class="buy">Buy</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tg-031e">BlueBananna.com</td>
+                        <td class="tg-031e">Available</td>
+                        <td class="tg-031e">
+                            <button class="buy">Buy</button>
+                        </td>
+                    </tr>
+                </table>
+                <div class="register">There are 632 more URLs.<br>
+                    <button class="reg">Register</button> now to search them all.
+                </div>
+
+
+
+            </div>
+
+
+            <div class="error"></div>
+
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+            <script src="js/jquery.ripples.js"></script>
+            <script src="js/cut.js"></script>
+
+
+
+    </body>
+
+
 </html>

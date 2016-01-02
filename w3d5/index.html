@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html ng-app="myApp" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Joe's Website</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body ng-controller="mainControl">
+    <h1>Angular</h1>
+    <hr class="thickHR">
+    <div class="q1">
+        <h3>ng-model</h3> Create an basic angular app, where you type in a text box, and it shows up as text somewhere else on the screen.
+        <hr>
+        <h4>Outcome</h4>
+        <input ng-model="typed"></input>
+        {{typed}}
+        <hr> 
+        <h4>index.html</h4>
+        <pre class="codeOut" ng-non-bindable>
+&lt;input ng-model="typed"&gt;&lt;/input&gt;
+    {{typed}}
+</pre>
+        <hr>
+    </p>
+    <hr class="thickHR">
+    <h3>ng-repeat</h3> Create an app, with an array of data in the service that showns up on the screen as a list.
+    <hr>
+    <h4>Outcome</h4>
+
+    <p class="codeOut" ng-repeat="alive in living">
+        {{alive}}
+    </p>
+    <hr>
+    <h4>index.html</h4>
+    <pre class="codeOut" ng-non-bindable>
+&lt;p ng-repeat="alive in living"&gt;
+    {{alive}}
+&lt;/p&gt;
+    </pre>
+    <hr>
+        
+    <h4>contorler.js</h4>
+    <pre class="codeOut" ng-non-bindable>
+$scope.living = myService.living;
+    </pre>
+<hr>
+<h4>service.js</h4>
+    <pre class="codeOut" ng-non-bindable>
+this.living = ['Monkey', 'Dog', 'Cat', 'Mouse'];
+    </pre>
+<hr>
+
+
+
+
+    <hr class="thickHR">
+    <h3>ng-repeat | filter:</h3> Create an app, with an array of data in the service that showns up on the screen as a list. Where you can type to filter what's shown in the list.
+    <hr>
+    <h4>Outcome</h4>
+<span class="codeOut">
+    <input ng-model="livingFilter"></input>
+<p ng-repeat="alive in living| filter: livingFilter">
+    {{alive}}
+</p>
+</span>
+    
+    <hr>
+    <h4>index.html</h4>
+    <pre class="codeOut" ng-non-bindable><span>&lt;input ng-model=&quot;livingFilter&quot;&gt;&lt;/input&gt;</span>
+<span class="gray">&lt;p ng-repeat="alive in living</span><span>| filter: livingFilter</span><span class="gray">"&gt;
+    {{alive}}</span>
+&lt;/p&gt;
+    </pre>
+    <hr>
+        
+    <h4>contorler.js</h4>
+    <pre class="gray" ng-non-bindable>
+$scope.living = myService.living;
+    </pre>
+<hr>
+<h4>service.js</h4>
+    <pre class="gray" ng-non-bindable>
+this.living = ['Monkey', 'Dog', 'Cat', 'Mouse'];
+    </pre>
+<hr>
+<hr class="thickHR">
+    <h3>$http</h3> Create an app hitting an api (swapi.co, birdapi.com, pokeapi, smurfs, marvel api, etc)
+    <hr>
+    <h4>Outcome</h4>
+<span class="codeOut"><br>
+    <div id="log1"></div>
+<div id="log2"></div>
+</span>
+    
+    <hr>
+    <h4>index.html</h4>
+    <pre class="codeOut" ng-non-bindable>
+&lt;div id="log1"&gt;&lt;/div&gt;
+&lt;div id="log2"&gt;&lt;/div&gt;
+    </pre>
+    <hr>
+        
+    <h4>contorler.js</h4>
+    <pre class="codeOut" ng-non-bindable>
+$scope.getUsers = myService.getUsers;
+    </pre>
+<hr>
+
+<h4>service.js</h4>
+    <pre class="codeOut" ng-non-bindable>
+var xhr = new XMLHttpRequest();
+xhr.open("GET", "http://smurfs.devmounta.in/smurfs/", false);
+xhr.send();
+
+document.getElementById("log1").innerHTML=(xhr.status);
+document.getElementById("log2").innerHTML=(xhr.statusText);
+    </pre>
+<hr class="thickHR">
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-rc.0/angular.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/controller.js"></script>
+    <script src="js/service.js"></script>
+</body>
+
+</html>

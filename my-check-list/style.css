@@ -1,0 +1,26 @@
+body{
+	background-color:blue;
+	background-size: 100%;
+    background-repeat: no-repeat;
+}
+.container {
+	width: 300px;
+	margin: 0 auto;
+}
+.done-true {
+  text-decoration: line-through;
+  color: grey;
+
+}
+.pure-menu-item {
+	padding-bottom: 10px;
+}
+
+.pure-menu-list {
+	padding-top: 10px;
+}
+
+.pure-button {
+	margin: 5px 0px 0px 5px;
+
+}

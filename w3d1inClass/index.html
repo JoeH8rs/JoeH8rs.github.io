@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html ng-app="myApp" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Joe's Website</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body ng-controller="mainControl">
+<h1>AngularJS Day One</h1> 
+    <hr>
+    <h4>ng-model</h4>
+    <input ng-model="something"></input>
+    <br/>
+    <h5>{{name}}</h5>
+    <P>
+        Joe says: {{something}}
+    </p>
+    <hr>
+    <h4>ng-repeat</h4> 
+    <div class="filters">
+    Name Filter:
+    <input class="filter" ng-model="crewFilter.name" ></input><br>
+    <!--Added .name to search for only name-->
+    Title Filter:
+    <input class="filter" ng-model="crewFilter.title" ></input>
+    
+</div>
+    <div class="crew-member" ng-repeat="member in crew | filter: crewFilter">  
+        <!--Added {name:   }  arround crewFilter when wanting to search one catagory-->
+        {{member.name }} - <span>"{{ member.title}}"</span>
+    
+    </div>
+
+    <hr>
+    <h4>ng-show</h4>
+    <div ng-show="isAwesome">You are awesome!</div>
+
+    <hr>
+    <h4>ng-hide</h4>
+    <p ng-hide="isAwesome">You are not awesome!</p>
+    <hr>
+    <h4>ng-if</h4>
+    <p ng-if="isAwesome">You are awesome! and you don't see this on the DOM if your not awesome</p>
+
+    <hr>
+    <h4>ng-click</h4>
+    
+    <button ng-click="btnClicked()">Push Me</button>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-rc.0/angular.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/controller.js"></script>
+    <script src="js/service.js"></script>
+</body>
+
+</html>
